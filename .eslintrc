@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "func-names": 0,
+    "vars-on-top": 0,
+    "consistent-return": 0
+  },
+  "globals": {
+    describe: true,
+    it: true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true
+  },
+  "extends": "eslint-config-airbnb-es5",
+}

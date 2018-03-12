@@ -1,0 +1,5 @@
+resources/assets/js/**
+coverage
+public/js/**
+dist/**
+gulp/**

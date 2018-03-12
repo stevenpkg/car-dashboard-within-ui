@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Watson Assistant Service Demo</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <style>
+    .app-links, .app-links:visited{
+      display: inline-block;
+      padding: 15px 20px 15px 20px;
+      color: #53585F;
+      border: solid 2px #53585F;
+      text-decoration: none;
+    }
+    .app-links:hover{
+      color: #FFFFFF;
+      background-color: #3BA690;
+      border: solid 2px #3BA690;
+    }
+  </style>
+</head>
+
+<body>
+<!-- top level heading -->
+<header class="_demo--heading">
+  <div class="_demo--container">
+    <a class="wordmark" href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/" target="_blank">
+      <span class="wordmark--left">IBM</span>
+      <span class="wordmark--right">Watson Developer Cloud</span>
+    </a>
+    <nav class="heading-nav" role="menubar">
+      <li class="base--li heading-nav--li" role="presentation">
+        <a class="heading-nav--item" href="https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/services-catalog.html" target="_blank" role="menuitem">
+          Services
+        </a>
+      </li>
+      <li class="base--li heading-nav--li" role="presentation">
+        <a class="heading-nav--item" href="https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/" target="_blank" role="menuitem">
+          Docs
+        </a>
+      </li>
+      <li class="base--li heading-nav--li" role="presentation">
+        <a class="heading-nav--item" href="https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/gallery.html" target="_blank" role="menuitem">
+          App Gallery
+        </a>
+      </li>
+      <li class="base--li heading-nav--li" role="presentation">
+        <a class="heading-nav--item" href="https://developer.ibm.com/watson/" target="_blank" role="menuitem">
+          Community
+        </a>
+      </li>
+    </nav>
+  </div>
+</header>
+<div class="_demo--banner banner">
+  <div class="_demo--container">
+    <div class="banner--service-container">
+      <div class="banner--service-icon-container">
+        <img class="banner--service-icon" src="images/conversation.svg" alt="Conversation Service API Icon">
+      </div>
+      <div class="banner--service-info">
+        <h1 class="banner--service-title base--h1">
+          <img class="banner--service-icon_INLINE" src="images/conversation.svg" alt="Watson Assistant Service API Icon">
+          Watson Assistant
+        </h1>
+        <div class="banner--service-description">
+          The IBM Watson Assistant service allows you to understand what users are saying and respond with natural language.
+        </div>
+      </div>
+    </div>
+    <div class="banner--service-resource-container">
+      <div class="banner--row">
+        <div class="banner--service-resource">
+          <span class="icon icon-link"></span>
+          <strong>Resources:</strong>
+        </div>
+      </div>
+      <div class="banner--row">
+        <div class="banner--service-links">
+          <li class="base--li banner--service-link-item">
+            <a href="http://www.ibm.com/watson/developercloud/doc/conversation/index.shtml" class="base--a" target="_blank">Documentation</a>
+          </li>
+          <li class="base--li banner--service-link-item">
+            <a href="https://watson-api-explorer.mybluemix.net/apis/conversation-v1" class="base--a" target="_blank">API Explorer</a>
+          </li>
+          <!--
+          <li class="base--li banner--service-link-item">
+            <a href="#" class="base--a" target="_blank">Fork on Github</a>
+          </li>
+          <li class="base--li banner--service-link-item">
+            <a href="#" class="base--a" target="_blank">Deploy on Bluemix</a>
+          </li>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- demo body -->
+<div class="_demo--container">
+  <article class="_content base--article">
+    <!--
+    <h2 class="base--h2">Try Watson Assistant</h2>
+    -->
+    <p class="base--p">In this demo, imagine you're in the driver's seat and Watson is your co-pilot.
+      Watson can understand your entries and respond accordingly.
+      <br><strong>Hint: </strong>Try asking <strong>"where is the nearest restaurant"</strong> or
+      <strong>"turn on the lights"</strong> to see how Watson understands your commands.</p>
+    <iframe style="width:100%; height:659px; border: solid 1px #909090; padding: 1px;" src="https://car-dashboard-green.ng.bluemix.net/"></iframe>
+    <p>This demo is trained on a specific set of car capabilities. Click on the "What can I ask" button in the demo,
+      or experiment to find them out on your own.
+    </p>
+    <h2 class="base--h2">Ready to get started?</h2>
+    <p class="base--p">&#x2605;Pro Tip: Like to start with a simple, highly customizable app? So do we! We recommend forking our Simple Chat App.<br>
+      The Simple Chat App uses the same pre-trained Watson model to answer questions during a drive to work, with a much simpler chat-style user
+      interface which you may ﬁnd easier to build on.
+    </p>
+    <a class="base--a app-links" href="https://conversation-simple-green.mybluemix.net/" target="_blank">Try Simple Chat App</a>
+    <a class="base--a app-links" href="https://github.com/watson-developer-cloud/conversation-simple" target="_blank">Simple Chat App on Github</a>
+    <a class="base--a app-links" href="https://github.com/watson-developer-cloud/car-dashboard" target="_blank">Full car dashboard demo on Github</a>
+    <!--
+    <hr>
+
+    <p class="base--p">We’ve also created a demo using Watson Watson Assistant integrated with an Enhanced Information Retrieval (EIR)
+      solution. This brings in some other IBM Watson services to create a bot that can look up answers in a library of documents when
+      it’s not sure how to respond to a user’s request. For more information on EIR, please <a href="#">see our documentation</a>.
+    </p>
+    <a class="base--a app-links" href="https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/tone-analyzer/api/v3/" target="_blank">Try EIR Integration App</a>
+    <a class="base--a app-links" href="https://github.com/watson-developer-cloud/conversation-enhanced" target="_blank">EIR Integration App on Github</a>
+    !-->
+
+
+  </article>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+</body>
+
+</html>

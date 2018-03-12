@@ -1,0 +1,19 @@
+language: node_js
+sudo: true
+cache:
+  directories:
+  - node_modules
+node_js: stable
+script:
+  - npm run lint
+  - npm test
+deploy:
+  provider: cloudfoundry
+  api: https://api.stage1.bluemix.net
+  username: germanatt@us.ibm.com
+  password: $CF_PASSWORD
+  organization: Watson-Platform-CSF-Staging
+  space: germanatt
+  on:
+    repo: watson-developer-cloud/demo-boilerplate-nodejs
+    branch: master

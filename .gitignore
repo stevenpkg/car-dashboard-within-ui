@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+coverage
+bower_components
+.DS_Store
+public/fonts/icon-fonts/*
+!public/fonts/icon-fonts/README.md
+.env.json
+tmp/*
+!tmp/README.md
+logs/*
+!logs/README.md
+.jshintignore
+.jshintrc
+.idea/
