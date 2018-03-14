@@ -1,5 +1,5 @@
 applications:
-- name: conversation-with-discovery-within-ui
+- name: car-dashboard-within-ui
   command: npm start
   path: .
   memory: 512M
