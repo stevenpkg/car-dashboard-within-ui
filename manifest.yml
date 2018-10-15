@@ -1,5 +1,6 @@
 applications:
-- name: car-dashboard-within-ui
+- name: bank-within-ui-dev
   command: npm start
   path: .
-  memory: 512M
+  memory: 256M
+  instances: 1
