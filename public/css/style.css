@@ -2,7 +2,8 @@
 .base--input, .base--color-input, .base--date-input, .base--datetime-local-input, .base--email-input, .base--file-input, .base--hidden-input, .base--month-input, .base--number-input, .base--password-input, .base--range-input, .base--search-input, .base--tel-input, .base--text-input, .base--time-input, .base--url-input, .base--week-input, .base--select, .base--textarea {
   font-family: "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", "Roboto", sans-serif; }
 
-.base--code, .base--pre, .base--pre code, .base--pre .base--code {
+.base--code, .base--pre, .base--pre code,
+.base--pre .base--code {
   font-family: "Courier New", "Lucida Console", monospace; }
 
 article:before,
@@ -369,7 +370,6 @@ body {
       -webkit-transform: translateY(-0.125em);
               transform: translateY(-0.125em); }
   .base--radio:checked + label:before {
-    background: -webkit-radial-gradient(#323232 40%, transparent 40%);
     background: radial-gradient(#323232 40%, transparent 40%); }
 
 .base--color-input {
@@ -401,8 +401,7 @@ body {
     background: #fff;
     border-radius: 1.5em;
     box-shadow: inset 0 0 0 0.1875em #325c80;
-    -webkit-transition-duration: .5s;
-            transition-duration: .5s; }
+    transition-duration: .5s; }
   .base--range-input:active::-webkit-slider-thumb {
     box-shadow: inset 0 0 0 1.25em #325c80;
     width: 1.875em;
@@ -531,7 +530,8 @@ body {
   color: #d74108;
   outline: 1px solid rgba(119, 118, 119, 0.25); }
 
-.base--pre, .base--pre code, .base--pre .base--code {
+.base--pre, .base--pre code,
+.base--pre .base--code {
   display: block;
   -webkit-hyphens: none;
       -ms-hyphens: none;
@@ -551,7 +551,8 @@ body {
   margin: .5em 0;
   overflow: auto;
   border: 1px solid rgba(119, 118, 119, 0.25); }
-  .base--pre code, .base--pre .base--code {
+  .base--pre code,
+  .base--pre .base--code {
     padding: 1em;
     font-size: 1em;
     outline: 0; }
@@ -561,18 +562,24 @@ body {
   padding-left: 0;
   margin-left: 0;
   list-style: none; }
-  .base--ul li, .base--ol li, .base--ul .base--li, .base--ol .base--li {
+  .base--ul li, .base--ol li,
+  .base--ul .base--li,
+  .base--ol .base--li {
     display: table-row;
     counter-increment: table-ol; }
-    .base--ul li:before, .base--ol li:before, .base--ul .base--li:before, .base--ol .base--li:before {
+    .base--ul li:before, .base--ol li:before,
+    .base--ul .base--li:before,
+    .base--ol .base--li:before {
       display: table-cell;
       padding-right: .4em;
       text-align: right; }
 
-.base--ul li:before, .base--ul .base--li:before {
+.base--ul li:before,
+.base--ul .base--li:before {
   content: "•"; }
 
-.base--ol li:before, .base--ol .base--li:before {
+.base--ol li:before,
+.base--ol .base--li:before {
   content: counter(table-ol) "."; }
 
 .base--blockquote {
@@ -603,7 +610,7 @@ body {
 @font-face {
   font-family: "icons";
   src: url("../../fonts/icon-fonts/icons.eot");
-  src: url("../../fonts/icon-fonts/icons.eot?#iefix") format("eot"), url("../../fonts/icon-fonts/icons.woff") format("woff"), url("../../fonts/icon-fonts/icons.ttf") format("truetype"), url("../../fonts/icon-fonts/icons.svg#icons") format("svg"); }
+  src: url("../../fonts/icon-fonts/icons.eot?#iefix") format("eot"), url("../../fonts/icon-fonts/icons.woff2") format("woff2"), url("../../fonts/icon-fonts/icons.woff") format("woff"), url("../../fonts/icon-fonts/icons.ttf") format("truetype"), url("../../fonts/icon-fonts/icons.svg#icons") format("svg"); }
 
 .icon:before {
   font-family: "icons";
@@ -911,7 +918,6 @@ body {
   font-size: 4rem;
   font-weight: bold;
   line-height: 1;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 1000;
   visibility: visible;
@@ -922,7 +928,6 @@ body {
   .jeff-quote--1 {
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: 0.1s;
     transition: 0.1s; }
     .jeff-quote--1_show {
       visibility: visible;
@@ -930,7 +935,6 @@ body {
   .jeff-quote--2 {
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: 0.1s;
     transition: 0.1s; }
     .jeff-quote--2_show {
       visibility: visible;
@@ -938,7 +942,6 @@ body {
   .jeff-quote--3 {
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: 0.1s;
     transition: 0.1s; }
     .jeff-quote--3_show {
       visibility: visible;
@@ -956,7 +959,6 @@ body {
   border-radius: 50%;
   box-shadow: 0px 0px 0.2rem rgba(27, 27, 27, 0.55);
   cursor: pointer;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   z-index: 100;
   /* rotate when .payload-column is expanded */
@@ -1030,7 +1032,6 @@ pre {
     width: 860px; } }
 
 .payload-column {
-  -webkit-transition: 0.2s;
   transition: 0.2s; }
 
 .payload-column_expanded {
