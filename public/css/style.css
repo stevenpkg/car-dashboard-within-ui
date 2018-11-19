@@ -894,7 +894,7 @@ body {
 .banner--service-icon {
   background-color: white;
   border-radius: 50%;
-  cursor: pointer; }
+  cursor: default; }
 
 .banner--service-info {
   padding-left: 1rem; }
